@@ -37,7 +37,8 @@ void Display::render(){
 	for(int y = 0; y < _height; y++){
 		_data[_width * y + _width - 1] = '\n';
 	}
-	cout << "\033c";
+
+	system("cls"); //unix用のスクリーンクリアコマンドをwindowsのコマンドプロンプトのスクリーンクリアへ変更
 	cout << _data;
 	//printf("%s",_data);
 }

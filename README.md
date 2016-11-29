@@ -1,14 +1,13 @@
-# ニコニコ動画でランク入りし、スターがつき始めたので！  
-ソース汚いです！！！すいません。  
-１週間で作ったからです！と言い訳させてもらいます-_-  
+# 概要
+ニコ動で見たコマンドプロンプトプロンプトで動くトランプゲームが
+Linux環境で走るものだったので、
+Windowsのコマンドプロンプトで動作するように修正
 
-# trump
-大学１年のころに制作したコマンドプロンプトで動くトランプゲーム。  
-ババ抜きです  
-動画：<https://www.youtube.com/watch?v=XS2PajJHAp0>
+#引用元
+https://github.com/takumus/trump
 
-# 説明
-私はflasherなので、表示オブジェクト周りのクラス設計は、  
-flash風になってます。addChild, removeChild等もあり、  
-入れ子構造にも対応してます。  
-flashラブ。
+# 使い方
+Visual Studio 2015　ソリューションファイルを開き、
+Visual Studioでデバッグ実行してください
+/Debug内のtrum.exeを直接実行すると
+"abort() has been called"というメッセージが出て止まります…

@@ -5,8 +5,8 @@
 //スプライトをイージング効果によって移動する
 //--------------------------------------------------------//
 bool SpriteTween::moveTo(Sprite *s, int targetX, int targetY){
-	moveTo(s, targetX, targetY, 1, 0.14);
-
+	//moveTo(s, targetX, targetY, 1, 0.14);
+	return moveTo(s, targetX, targetY, 1, 0.14); //ruturnが無かったので追加
 }
 bool SpriteTween::moveTo(Sprite *s, int targetX, int targetY, double targetScale, double speed){
 	//ほぼ移動が完了したらtrueを返す

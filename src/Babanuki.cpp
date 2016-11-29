@@ -159,7 +159,7 @@ string phase;
 //デバッグモードかどうか
 bool debug = false;
 //初期化
-#include <unistd.h>
+//#include <unistd.h> //unix用の標準出力ライブラリはWindowsでは使えないのでコメントアウト
 
 //ゲームオーバーアニメーション
 TitleScreen titleScreen;
@@ -182,6 +182,7 @@ void init() {
 	display.setup(79, 24, ' ');
 	//プレイヤー初期化
 	//initPlayer(PLAYER);
+	
 	//トランプを初期化
 	initTrump();
 
@@ -650,7 +651,7 @@ bool renderSelecting(int i) {
 //--------------------------------------------------------//
 char getcharf(void) {
 	char tc;
-	char c;
+	char c = 'c'; //cが空だと怒られたので、適当な文字で初期化
 	bool f = true;
 	//改行が来るまで繰り返し。
 	while((tc = getchar())!='\n'){

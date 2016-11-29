@@ -7,13 +7,13 @@
 using namespace std;
 
 //--------------------------------------------------------//
-//•`‰æ‹@”\“à‘ ”Å‚ÌƒXƒvƒ‰ƒCƒg(Sprite‚ğŒp³)
+//ï¿½`ï¿½ï¿½ï¿½@ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½Å‚ÌƒXï¿½vï¿½ï¿½ï¿½Cï¿½g(Spriteï¿½ï¿½ï¿½pï¿½ï¿½)
 //--------------------------------------------------------//
 class Shape : public Sprite {
 public:
 	Shape();
-	void fill(char c){fillc = c;}//“h‚è‚Ì•¶š‚ğƒZƒbƒg
-	void noFill(){fillc = ' ';}//“h‚è‚Ì•¶š‚ğ‚È‚µ‚ÉƒZƒbƒg
+	void fill(char c){fillc = c;}//ï¿½hï¿½ï¿½ï¿½Ì•ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Zï¿½bï¿½g
+	void noFill(){fillc = ' ';}//ï¿½hï¿½ï¿½ï¿½Ì•ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È‚ï¿½ï¿½ÉƒZï¿½bï¿½g
 	void clear();
 	void rect(int x, int y, int w, int h);
 	void line(int x1, int y1, int x2, int y2);
