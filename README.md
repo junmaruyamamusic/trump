@@ -7,7 +7,11 @@ Windowsのコマンドプロンプトで動作するように修正
 https://github.com/takumus/trump
 
 # 使い方
-Visual Studio 2015　ソリューションファイルを開き、
-Visual Studioでデバッグ実行してください
-/Debug内のtrum.exeを直接実行すると
-"abort() has been called"というメッセージが出て止まります…
+git clone またはzipでダウンロードして
+/Release/trump.exe
+を実行してください。
+
+# ゲームの操作方法
+Enterキーで選択（モード選択、カード選択）
+Aキーで確定
+Dキーでデバッグモード（相手の手札が丸見え）
